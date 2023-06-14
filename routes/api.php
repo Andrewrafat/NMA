@@ -14,7 +14,6 @@ use App\Http\Controllers\api\QuizeController;
 use App\Http\Controllers\Api\question\QuestionCrudController;
 use App\Http\Controllers\Api\question\QuestionImportController;
 use App\Http\Controllers\Api\question\QuestionTypeController;
-use Illuminate\Support\Facades\Request as FacadesRequest;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,9 +35,9 @@ Route::post('logout', [authcontroller::class, 'logout'])->name('auth.logout')->m
 Route::get('/version', [ApiController::class, 'index'])->name('api.version');
 
 // auth with laravel 
-Route::post('register', [authcontroller::class, 'register'])->name('auth.register');
-Route::post('login', [authcontroller::class, 'login'])->name('auth.login');
-Route::post('logout', [authcontroller::class, 'logout'])->name('auth.logout');
+Route::post('register', [authcontroller::class, 'register']);
+Route::post('login', [authcontroller::class, 'login']);
+Route::post('logout', [authcontroller::class, 'logout']);
 
 
 

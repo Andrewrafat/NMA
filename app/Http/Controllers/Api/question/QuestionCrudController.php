@@ -24,7 +24,7 @@ use App\Transformers\API\TopicSearchTransformer;
 use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
 
-class QuestionController extends Controller
+class QuestionCrudController extends Controller
 {
     private QuestionRepository $repository;
 
